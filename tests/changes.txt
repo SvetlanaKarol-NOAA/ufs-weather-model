@@ -1,0 +1,11 @@
+rt.sh   ACCNR=swpc
+cp /scratch1/NCEPDEV/swpc/Svetlana.Karol/save/FV3WAM/ufs-weather-model-07Jan2022/tests/parm/diag_table/diag_table_wam
+BL_DATE   rt.sh   from  /scratch1/NCEPDEV/nems/emc.nemspara/RT/NEMSfv3gfs/develop-20220304
+
+
+cp /scratch1/NCEPDEV/swpc/Svetlana.Karol/save/FV3WAM/ufs-weather-model-07Jan2022/tests/wam_rt.conf
+
+cp /scratch1/NCEPDEV/swpc/Svetlana.Karol/save/FV3WAM_CCPP_PR/ufs-weather-model/tests/tests/control_wam  control_wamphys
+
+ 
+rt.sh -l wamphys_rt.conf -wk

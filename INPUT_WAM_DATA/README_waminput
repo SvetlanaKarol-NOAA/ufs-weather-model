@@ -1,0 +1,44 @@
+/scratch1/NCEPDEV/swpc/WAM-IPE_DATA/WAM_FIX/WAM_gh_l150
+W2005
+global_idea_coeff_W05SCHAtable.dat
+global_idea_coeff_W05scBndy.dat
+global_idea_coeff_W05scBpot.dat
+global_idea_coeff_W05scEpot.dat
+! Astrid TGCM
+global_idea_coeff_hflux.dat
+global_idea_coeff_lflux.dat
+!
+! IONdata
+!
+tiros_tjr.nc
+iondata_tjr.nc
+!
+!
+!
+! rad-CO2
+global_idea_coeff_lte.150 
+global_idea_coeff_lte.360
+global_idea_coeff_lte.540
+global_idea_coeff_lte.720
+!
+!rad-H2O
+!
+global_idea_ggww_in1.par
+global_idea_ggww_in4.par
+global_idea_h2ort_kg7t.par
+global_idea_h2ovb_kg7t.par
+!
+!rad-NO
+!
+snoe_eof.nc
+!
+! global WX-tracers
+!
+wam_rm3_globcomp.nc
+!
+!KP/F107
+wasolar_dan_20161019.nc
+!
+!
+!
+
