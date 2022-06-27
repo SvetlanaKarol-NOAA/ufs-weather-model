@@ -359,13 +359,15 @@
  Dir_imf = './'
 /
 &wamphys_control_nml
-     JH0=$JH0, JH_tanh=$JH_tanh, JH_semiann=$JH_semiann, JH_ann=$JH_ann,
-     skeddy0=$skeddy0, skeddy_semiann=$skeddy_semiann, skeddy_ann=$skeddy_ann,
-     tkeddy0=$tkeddy0, tkeddy_semiann=$tkeddy_semiann, tkeddy_ann=$tkeddy_ann
+      JH0=1.75, JH_tanh=0.5, JH_semiann=0.5, JH_ann=0.0,
+      skeddy0=140., skeddy_semiann=60., skeddy_ann=0.,
+      tkeddy0=280., tkeddy_semiann=0., tkeddy_ann=0.
 /
 &multi_gases_nml
   ri= 295.3892,  461.50, 0., 0., 0., 0., 0., 173.2247,  519.674, 259.8370 ,0.,0.
   cpi=1031.1083, 1846.00, 0., 0., 0., 0., 0.,  820.2391, 1299.185, 918.0969, 0.,0.
+  ntrac_wat=6
+  ntrac_nml=11
 /
 &molecular_diffusion_nml
   tau_visc = 1.0
