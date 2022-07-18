@@ -14,6 +14,8 @@ cp ${inputdir_WAM}/snoe_eof.nc  ./
 cp ${inputdir_WAM}/tiros_tjr.nc ./
 cp ${inputdir_WAM}/iondata_tjr.nc ./
 cp ${inputdir_WAM}/wam_rm3_globcomp.nc ./
+cp ${inputdir_WAM}/ionprof ./
+cp ${inputdir_WAM}/tiros_spectra ./
 if [ $CPLWAV = .true. ]; then
   cp  @[INPUTDATA_ROOT_WW3]/mod_def.* .
   cp  @[INPUTDATA_ROOT_WW3]/rmp_src* .
