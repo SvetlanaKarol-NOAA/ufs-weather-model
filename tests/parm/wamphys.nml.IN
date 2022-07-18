@@ -352,16 +352,20 @@
 &ion_parms_nl
  GW_fix=30., tiros_activity_fix=7, idea_imf_fix=1
  tiros_file  = '/scratch1/NCEPDEV/swpc/WAM-IPE_DATA/WAM_FIX/tiros_tjr.nc'
- dation_file = '/scratch1/NCEPDEV/swpc/WAM-IPE_DATA/WAM_FIXiondata_tjr.nc'
+ dation_file = '/scratch1/NCEPDEV/swpc/WAM-IPE_DATA/WAM_FIX/iondata_tjr.nc'
  imf_file='/scratch1/NCEPDEV/swpc/WAM-IPE_DATA/WAM_FIX/wam_nems_imf_2012.nc'
  Dir_swpc = './'
  Dir_uid =  './'
  Dir_imf = './'
 /
 &wamphys_nml
-      JH0=1.75, JH_tanh=0.5, JH_semiann=0.5, JH_ann=0.0,
-      skeddy0=140., skeddy_semiann=60., skeddy_ann=0.,
-      tkeddy0=280., tkeddy_semiann=0., tkeddy_ann=0.
+     JH0=1.75, JH_tanh=0.5, JH_semiann=0.5, JH_ann=0.0,
+     skeddy0=140., skeddy_semiann=60., skeddy_ann=0.,
+     tkeddy0=280., tkeddy_semiann=0., tkeddy_ann=0., f107_fix=120.,
+     f107a_fix= 120., kp_fix= 3.0, kpa_fix=3.0, gW_fix=30.,tiros_activity_fix =7.,
+     tiros_switch=0, spw_drivers= 'swpc_fst', efield_model='epot', swin_drivers='swin_wam',
+     do_init_tides=.false.,do_init_swio=.true., do_init_wamtracers=.true.,
+     do_init_wamion=.true., do_init_wamrad=.true.
 /
 &multi_gases_nml
   ri= 295.3892,  461.50, 0., 0., 0., 0., 0., 173.2247,  519.674, 259.8370 ,0.,0.
