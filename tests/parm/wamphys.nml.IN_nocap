@@ -34,7 +34,7 @@
        ntiles   = 6,
        npz    = 149
        grid_type = -1
-       ncnst     = 13
+       ncnst     = 12
        make_nh = .false.
        fv_debug = .true.
        molecular_diffusion=.true.
@@ -42,21 +42,10 @@
        reset_eta = .false.
        n_sponge = -1
        nudge_qv = .false.
-       tau = 5.0
-       rf_cutoff = 1.0
-       d2_bg_k1 = 0.20
-       d2_bg_k2 = 0.02
-       fv_sg_adj = 450
-       d2_bg = 0.
-       nord =  1
-       dddmp = 0.1
-       d4_bg = 0.12
-       vtdm4 = 0.03
-       delt_max = 0.002
-       ke_bg = 0.
-       d_con = 1.0
-       do_vort_damp = .true.
-       consv_te = 1.
+       tau = 1.0
+       rf_cutoff = 1.e0
+       d2_bg_k1 = 0.0
+       d2_bg_k2 = 0.0
        kord_tm = -9
        kord_mt =  9
        kord_wz =  9
@@ -72,19 +61,30 @@
        nwat = 6
        na_init = 0
        d_ext = 0.0
-       dnats = 0       
+       dnats = 0
+       fv_sg_adj = -1
+       d2_bg = 0.
+       nord =  1
+       dddmp = 0.0
+       d4_bg = 0.20
+       vtdm4 = 0.0
+       delt_max = 1.0
+       ke_bg = 0.
+       do_vort_damp = .false.
        external_ic = .true.
        external_eta = .true.
        gfs_phil = .false.
        nggps_ic = .true.
        mountain = .false.
        ncep_ic = .false.
+       d_con = 0.0
        hord_mt =  6
        hord_vt =  6
        hord_tm =  6
        hord_dp =  6
        hord_tr = 8
        adjust_dry_mass = .false.
+       consv_te = 0.
        do_sat_adj = .true.
        consv_am = .false.
        fill = .true.
@@ -349,14 +349,14 @@
      do_init_wamion=.true., do_init_wamrad=.true.
 /
 &multi_gases_nml
-  ri= 295.3892,  461.50, 0., 0., 0., 0., 0., 173.2247,  519.674, 259.8370 ,0.,0.,0.
-  cpi=1031.1083, 1846.00, 0., 0., 0., 0., 0.,  820.2391, 1299.185, 918.0969, 0.,0.,0.
+  ri= 295.3892,  461.50, 0., 0., 0., 0., 0., 173.2247,  519.674, 259.8370 ,0.,0.
+  cpi=1031.1083, 1846.00, 0., 0., 0., 0., 0.,  820.2391, 1299.185, 918.0969, 0.,0.
 /
 &wamphys_tracer_cpi
-  ri= 295.3892,  461.50, 0., 0., 0., 0., 0., 173.2247,  519.674, 259.8370 ,0.,0.,0.
-  cpi=1031.1083, 1846.00, 0., 0., 0., 0., 0.,  820.2391, 1299.185, 918.0969, 0.,0.,0.
+  ri= 295.3892,  461.50, 0., 0., 0., 0., 0., 173.2247,  519.674, 259.8370 ,0.,0.
+  cpi=1031.1083, 1846.00, 0., 0., 0., 0., 0.,  820.2391, 1299.185, 918.0969, 0.,0.
   ntrac_wat=6
-  ntrac_nml=12
+  ntrac_nml=11
 /
 &molecular_diffusion_nml
   tau_visc = 1.0
