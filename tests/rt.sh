@@ -1046,7 +1046,7 @@ source bl_date.conf
 if [[ "${RTPWD_NEW_BASELINE}" == true ]] ; then
   RTPWD=${NEW_BASELINE}
 else
-  RTPWD=${RTPWD:-${DISKNM}/NEMSfv3gfs/develop-${BL_DATE}}
+  RTPWD=${RTPWD:-${DISKNM}/NEMSfv3gfs/input-data-${BL_DATE}}
 fi
 
 if [[ "${CREATE_BASELINE}" == false ]] ; then
